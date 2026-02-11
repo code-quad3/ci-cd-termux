@@ -22,4 +22,4 @@ jobs:
 
       - name: Trigger Termux deploy
         run: |
-          curl -X POST https://YOUR_NGROK_URL/deploy
+          curl -X POST NGROK_URL/deploy
