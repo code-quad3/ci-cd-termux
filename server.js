@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 const app = express();
 const PORT = 3001;
 
-app.get("/", (req, res) => res.send("Hello World! App is running on Termux! "));
+app.get("/", (req, res) => res.send("Hello World! App is running on Termux!"));
 
 app.post("/deploy", (req, res) => {
   console.log("Deploy triggered...");
