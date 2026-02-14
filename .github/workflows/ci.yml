@@ -21,5 +21,7 @@ jobs:
       - run: echo "CI passed"
 
       - name: Trigger Termux deploy
+        env:
+          NGROK_URL: ${{ secrets.NGROK_URL }}
         run: |
           curl -X POST "$NGROK_URL/deploy"
